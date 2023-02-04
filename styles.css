@@ -1,23 +1,24 @@
 #calculator {
-    height: 500px;
-    width: 300px;
-    border: solid black 2px;
+    height: 570px;
+    width: 350px;
+    border: solid #d78f88 2px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    background-color: #c0c0c0;
+    background-color: #fdb1aa;
 }
 
 #display {
     height: 70px;
     width: 270px;
-    border: groove black 2px;
-    background-color: white;
+    border: groove #d78f88 2px;
+    background-color: #fef5eb;
     display: flex;
     flex-direction: row-reverse;
     text-align: right;
     font-size: 40px;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -29,11 +30,22 @@ button {
     width: 60px;
     margin: 5px;
     font-size: 30px;
+    border-radius: 5px;
+    border-color: #d78f88;
+    color: #de4f4f;
 }
 
 #buttons {
     display: flex;
     flex-direction: column;
+}
+
+#operators button {
+    background-color: #fdd1ba;
+}
+
+#numbers button {
+    background-color: #fae5d1;
 }
 
 #operators {
@@ -42,6 +54,8 @@ button {
     flex-wrap: wrap;
     margin: auto;
     gap: 5px;
+    justify-content: center;
+    padding-top: 15px;
 }
 
 #numbers {
@@ -50,5 +64,6 @@ button {
     flex-wrap: wrap;
     margin: auto;
     gap: 5px;
-    padding-top: 10px;
+    padding-top: 35px;
+    justify-content: center;
 }
